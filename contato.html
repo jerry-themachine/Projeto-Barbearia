@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contato</title>
 </head>
 <body>
-    <h1>CONTATO</h1>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.jpg" alt="Logo da Barbearia ONe Look" class="logo"> </h1>            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" target="_self">Home</a>  <!--Redirecionamento para outra página usar `target="_blank"` -->
+                    </li>
+                    <li>
+                        <a href="produtos.html" target="_self">Produtos</a> <!--Redirecionamento para a página atual usar `target="_self"` -->
+                    </li>
+                    <li>
+                        <a href="contato.html" target="_self">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomeSobrenome" class="input-padrao" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="ex: email@dominio.com.br">
+
+            <label for="fone">Celular</label>
+            <input type="tel" id="fone" class="input-padrao" required placeholder="ex: (DDD)X.XXXX-XXXX">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" cols="52" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset>                
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radioEmail"><input type="radio" name="contato" value="email" id="radioEmail">E-mail</label>
+                
+                    <label for="lig"><input type="radio" name="contato" value="ligação" id="lig">Ligação</label>
+                
+                    <label><input type="radio" name="contato" value="whatsapp" id="what" checked>Whatsapp</label>                
+            </fieldset>
+            
+
+            
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+           
+
+            <label for="check" class="checkbox"><input type="checkbox" name="" id="check" checked>Gostaria de receber nossas novidades por e-mail?</label>
+            
+            
+            <input type="submit" value="Enviar Formulário" class="enviar">            
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>DIA</th>
+                    <th>HORÁRIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>08:00~20:00hs</td>
+                </tr>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>08:00~17:30hs</td>
+                </tr>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>08:00~20:00hs</td>
+                </tr>
+                <tr>
+                    <td>Quinta-feira</td>
+                    <td>08:00~17:30hs</td>
+                </tr>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>08:00~20:00hs</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>08:00~14:00hs</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="footer3.jpg" alt="Logo da Barbearia ONe Look" class="imgFooter">
+        <p class="copyright">&copy; Copyright Barbearia One Look - 2021</p>
+    </footer>
 </body>
 </html>

@@ -1,50 +1,169 @@
-
-.titulo-principal {
-	padding-left: 20px;
+header {
+    background: #BBBBBB ;
+    padding: 20px 0;
 }
 
-#banner {
-	width: 100%;
+.logo{
+    border-radius: 30px;
 }
 
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
-.titulo-centralizado {
-	text-align: center
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
 }
 
-p {
-	text-align: center;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+     text-transform: uppercase;
+     color: #000000;
+     font-weight: bold;
+     font-size: 25px;
+     text-decoration: none;
 }
 
-#missao {
-	font-size: 20px
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-em strong {
-	color: #FF0000;
+.produtos {
+    width: 940px;
+    margin: 0px auto;
+    padding: 50px 0;    
 }
 
-.itens {
-	font-style: italic;
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    /* background-color: rgb(87, 161, 161); */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
 }
 
-.beneficios {
-	background-color: #FFFFFF;
-	padding: 20px;
+.produtos li:hover {   
+    border: 5px solid #C78C19;
+    
 }
 
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+.produtos li:hover h2 {
+    font-size: 34px;
 }
 
-.imagemBeneficios {
-	width: 50%;
+.produtos li:active {
+    border: 5px solid #088C19;
 }
+
+.produtos h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.produtoDescricao {
+   font-size: 18px; 
+}
+
+
+.produtoPreco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;    
+    padding: 40px 0;
+}
+
+.imgFooter {
+    width: 100px;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #a7a3a3;
+    margin-top: 20px;
+}
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    border: none;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 20%;
+    padding: 5px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-color: orange;
+    font-weight: bolder;
+    transition: .5s all; /*Tempo de transição de todos os elementos*/
+    cursor: pointer;
+}
+.enviar:hover {
+    font-size: 18px;
+    background-color: orangered;    
+    text-decoration: underline;
+    border: 3px solid #088C19;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px; 
+    border-collapse:collapse;   
+}
+thead {
+    background-color: #6e6a6a;    
+    color: rgb(190, 187, 187);
+    font-weight: bold;
+}
+
+th {
+    border: 1px solid #000;    
+    padding: 11px 12px;
+}
+td {
+    border: 1px solid #000;    
+    padding: 10px 15px;
+    
+}
+
 
