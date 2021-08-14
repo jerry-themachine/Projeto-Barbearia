@@ -3,12 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Barbearia</title>
+		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="styleHome.css">
 	</head>
 
 	<body>
 		<header>
-			<h1 class="titulo-principal">Barbearia One Look</h1>
+			<div class="caixa">
+				<h1><img src="logo.jpg" alt="Logo da Barbearia ONe Look" class="logo"> </h1>            
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html" target="_self">Home</a>  <!--Redirecionamento para outra página usar `target="_blank"` -->
+						</li>
+						<li>
+							<a href="produtos.html" target="_self">Produtos</a> <!--Redirecionamento para a página atual usar `target="_self"` -->
+						</li>
+						<li>
+							<a href="contato.html" target="_self">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<img id="banner" src="banner.jpg">
 
@@ -21,7 +37,7 @@
 
 		<div class="beneficios">
 			<h3 class="titulo-centralizado">Benefícios</h3>
-			<ul>
+			<ul id="Beneficios">
 				<li class="itens">Atendimento aos Clientes</li>
 				<li class="itens">Espaço Diferenciado</li>
 				<li class="itens">Localização</li>
