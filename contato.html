@@ -30,45 +30,41 @@
 
     <main>
         <form action="">
+
             <label for="nomeSobrenome">Nome e Sobrenome</label>
             <input type="text" id="nomeSobrenome" class="input-padrao" required>
-
             <label for="email">E-mail</label>
             <input type="email" id="email" class="input-padrao" required placeholder="ex: email@dominio.com.br">
-
             <label for="fone">Celular</label>
             <input type="tel" id="fone" class="input-padrao" required placeholder="ex: (DDD)X.XXXX-XXXX">
             
             <label for="mensagem">Mensagem</label>
-            <textarea name="" id="mensagem" cols="52" rows="10" class="input-padrao" required></textarea>
-
-            <fieldset>                
+            <textarea name="" id="mensagem" cols="52" rows="10" class="input-padrao" required></textarea>           
+           
+            <fieldset>
                     <legend>Como prefere o nosso contato?</legend>
                     <label for="radioEmail"><input type="radio" name="contato" value="email" id="radioEmail">E-mail</label>
-                
+            
                     <label for="lig"><input type="radio" name="contato" value="ligação" id="lig">Ligação</label>
-                
-                    <label><input type="radio" name="contato" value="whatsapp" id="what" checked>Whatsapp</label>                
+            
+                    <label><input type="radio" name="contato" value="whatsapp" id="what" checked>Whatsapp</label>
+            </fieldset>          
+                        
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
             </fieldset>
             
-
-            
-                <fieldset>
-                    <legend>Qual horário prefere ser atendido?</legend>
-                    <select name="" id="">
-                        <option value="">Manhã</option>
-                        <option value="">Tarde</option>
-                        <option value="">Noite</option>
-                    </select>
-                </fieldset>
-           
-
-            <label for="check" class="checkbox"><input type="checkbox" name="" id="check" checked>Gostaria de receber nossas novidades por e-mail?</label>
-            
-            
+            <label for="check" class="checkbox"><input type="checkbox" name="" id="check" checked>Gostaria de receber nossas novidades por e-mail?</label> 
+                        
             <input type="submit" value="Enviar Formulário" class="enviar">            
         </form>
 
+        
         <table>
             <thead>
                 <tr>
@@ -103,6 +99,7 @@
                 </tr>
             </tbody>
         </table>
+        
     </main>
 
     <footer>
